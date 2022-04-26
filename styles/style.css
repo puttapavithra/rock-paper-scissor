@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle 400px at 6.8% 8.3%,
+    rgba(255, 244, 169, 1) 0%,
+    rgba(255, 244, 234, 1) 100.2%
+  );
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  width: 90%;
+  max-width: 40rem;
+  background-color: aliceblue;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.game-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 6rem;
+}
+
+.game-title h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.game-scores h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.game-scores h2 span {
+  font-weight: 900;
+}
+
+.game-weapons {
+  width: 100%;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.game-weapons .weapon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: rgb(138, 240, 138);
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-out;
+}
+
+.game-weapons .weapon:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+  transform: scale(1.05);
+}
+
+.game-result {
+  padding: 1rem;
+  min-height: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.game-result h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.game-result h2#result {
+  background-color: cadetblue;
+  padding: 1rem 1.5rem;
+}
+
+.game-result.show {
+  display: block;
+}

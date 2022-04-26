@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="game-board">
+        <div class="game-title">
+          <h1>
+            Rock <br />
+            Paper <br />
+            Scissors
+          </h1>
+        </div>
+        <div class="game-scores">
+          <h2>User Score: <span id="user-score">20</span></h2>
+          <h2>Computer Score: <span id="computer-score">30</span></h2>
+        </div>
+      </div>
+      <div class="game-weapons" id="weapons-container"></div>
+
+      <div class="game-result" id="result-container">
+        <h2>You Choose <span id="user-weapon"></span></h2>
+        <h2>Computer Choose <span id="computer-weapon"></span></h2>
+        <h2 id="result"></h2>
+      </div>
+    </main>
+
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
